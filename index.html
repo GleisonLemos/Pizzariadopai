@@ -13,23 +13,48 @@
     <header>
         <ul>
             <h1>Pizzaria do Pai</h1>
-            <li><h3>Pizzas</h3></li>
+            <li><h3>A Melhor Pizza da Cidade</h3></li>
         </ul>
     </header>
     <section>
-        <h3>Selecione a Pizza</h3>
+        
         <form>
+            <h3>Selecione o Sabor</h3>
             <ul>
-                <li><input type="radio" id="calabresa" name="sabores" ><label for="">Calabresa</label></li>
-                <li><input type="radio" id="marguerita" name="sabores"><label for="">Marguerita</label></li>
-                <li><input type="radio" id="quatro queijos" name="sabores"><label for="">Quatro queijos</label></li>
-                <li><input type="radio" id="portuguesa" name="sabaores"><label for="">Portuquesa</label></li>
-                <li><input type="radio" id="napolitana" name="sabores"></li>
-                <li><input type="radio" id="muçarela" name="sabores"></li>
-                <li><input type="radio" id="romeu e julieta" name="sabores"></li>
-                <li><input type="radio" id="brigadeiro" name="sabores"></li>
+                <li><input type="radio" id="calabresa" name="sabores" ><label for="calbresa">Calabresa</label></li>
+                <li><input type="radio" id="marguerita" name="sabores"><label for="marguerita">Marguerita</label></li>
+                <li><input type="radio" id="quatroqueijos" name="sabores"><label for="quatroqueijos">Quatro queijos</label></li>
+                <li><input type="radio" id="portuguesa" name="sabores"><label for="portuquesa">Portuquesa</label></li>
+                
             </ul>
         </form>
+    </section>
+    <section>
+        <button id="vendas">Vendas</button><button id="estorno">Estorno</button>
+        
+    </section>
+    <section>
+        
+        <table id="tabela">
+            <tr>
+              <th>Sabores</th><th>Quantidade</th><th>Valores</th>
+            </tr>
+            <tr>
+                <td>Calabresa</td><td id="resultado-c"></td><td id="venda-c"></td>             
+            </tr>    
+            <tr>
+                <td>Marquerita</td><td id="resultado-m"></td><td id="venda-m"></td>                  
+            </tr>
+            <tr>
+                <td>Quatro queijos</td><td id="resultado-q"></td><td id="venda-q"></td>                  
+            </tr>
+            <tr>
+                <td>Portuquesa</td><td id="reaultado-p"></td><td id="venda-p"></td>                  
+            </tr>
+        </table>
+    </section>
+    <section>
+        <button id="exportar">Planilha</button>
     </section>
 
     

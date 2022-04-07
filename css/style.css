@@ -1,0 +1,50 @@
+body{
+    margin: auto;
+    width: 60%;    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(79, 136, 79);
+    color: rgb(5, 58, 59);
+    text-align: center;    
+}
+
+header ul h1{
+    text-align: center;
+}
+header ul li {
+    list-style: none;
+    text-align: center;
+}
+
+section form h3{
+    text-align: center;
+}
+section form ul li{
+    list-style: none;
+}
+
+section form ul li label{
+    font-size: 22px;
+}
+
+section{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+section button{
+    margin: 6px;
+    font-size: 18px;
+}
+
+table, th, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-radius: 6px;
+    font-size: medium;
+} 
