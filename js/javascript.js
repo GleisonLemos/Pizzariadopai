@@ -9,6 +9,7 @@ let vendaMaguerita = 0.00;
 let vendaQuatroqueijos = 0.00;
 let vendaPortuguesa = 0.00;
 
+
 let btnVendas = document.getElementById('vendas');
 let btnEstorno = document.getElementById('estorno');
 let btnPlanilha = document.getElementById('exportar');
@@ -19,9 +20,26 @@ btnEstorno.addEventListener('click', estorno, false);
 btnPlanilha.addEventListener('click' , planilha, false);
 
 //Funções
-function vendas(e)[
+function Vendas(e){
     if(document.getElementById('clabresa') .cheked){
         somaCalabresa = somaCalabresa + 1;
         vendaCalabresa = vendaCalabresa + 30.00;
-    }else if(document.addEventListener('marguerita').cheked)
-]
+        document.getElementById('resultado-c') .innerHTML = somaCalabresa;
+        document.getElementById('vendaCalabresa') .innerHTML = vendaCalabresa.toFixed(2);
+    }else if(document.addEventListener('marguerita').cheked){
+        somaMarguerita = somaMarguerita + 1;
+        vendaMaguerita = vendaMaguerita + 30.00;
+        document.getElementById('resultado-m') .innerHTML = somaMarguerita;
+        document.getElementById('vendaMarguerita') .innerHTML = vendaMaguerita.toFixed(2);
+    }else if(document.getElementById9('quatroqueijos') .cheked){
+        somaQuatroqueijos = somaQuatroqueijos + 1;
+        vendaQuatroqueijos = vendaQuatroqueijos + 30.00;
+        document.getElementById('resultado-q') .innerHTML = somaQuatroqueijos;
+        document.getElementById('vendaQuatroqueijos') .innerHTML = vendaQuatroqueijos.toFixed(2);
+    }else if(document.getElementById('portuguesa') .cheked){
+        somaPortuguesa = somaPortuguesa + 1;
+        vendaPortuguesa = vendaPortuguesa + 30.00;
+        document.getElementById('resultado-p') .innerHTML = somaPortuguesa;
+        document.getElementById('vendaPortuguesa') .innerHTML = vendaPortuguesa.toFixed(2);
+    }
+}
